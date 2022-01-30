@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BMI Kalkulator</title>
+</head>
+
+<body>
+    <header>
+        <h1><span aria-label="Body Mass Index - indeks masy ciała">BMI Kalkulator</span></h1>
+    </header>
+    <div class="container">
+        <label>
+            <input id="height" type="number" placeholder="Podaj swój wzrost [cm]: " autofocus>
+        </label>
+        <label>
+            <input id="weight" type="number" placeholder="Podaj swoją wagę [kg]: ">
+        </label>
+        <button id="btn"><strong>Oblicz</strong></button>
+        <div class="value">
+            <h4>Twoje BMI:</h4>
+            <div id="output"></div>
+        </div>
+        <div class="status">
+            <h4>Opis:</h4>
+            <div id="result"></div>
+        </div>
+        <div id="message"></div>
+        <div>
+            <p>Czy chcesz poradę?</p>
+            <button id="btn_1">Kliknij</button>
+        </div>
+        <div>
+            <p>Czy chcesz zmienić swoją dietę?</p>
+            <button id="btn_2">Kliknij</button>
+        </div>
+        
+    </div>
+    <script src="js/scripts.js" defer></script>
+</body>
+
+</html>

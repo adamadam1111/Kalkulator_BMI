@@ -1,0 +1,91 @@
+@import 'reset.css';
+
+body {
+    background-color: rgba(208, 214, 214, 1);
+    background-image: radial-gradient(circle, rgb(230, 217, 217) 24%, rgba(162, 167, 163, 1) 52%, rgba(173, 174, 169, 1) 70%, rgba(142, 139, 139, 0.95) 91%);
+}
+
+header {
+    height: 50vh;
+    background: url('../assets/pic_1.jpg') center/cover fixed;
+}
+
+h1 {
+    padding-top: 20%;
+    margin-left: 20%;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 0.1em #DE2B2E, 0 0 0.1em white, 0 0 0.1em #DE2B2E;
+}
+ 
+[aria-label] {
+    position: relative;
+}
+
+[aria-label]::before {
+    content: attr(aria-label);
+    opacity: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background:  #201d18;
+    color:  #BEC4C2;
+    padding: 5px;
+    transition: .5s ease-in-out;
+    transition-property: opacity, visibility;
+}
+
+[aria-label]:hover::before {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+.container {
+     font-family:'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+     display: grid; 
+     justify-content: center;
+     align-content: center;
+     min-height: 20vh;
+     grid-template-columns: 30vw;
+     grid-template-rows: repeat(3,10vh);
+     grid-gap: 7px;
+     padding: 7px; 
+}
+ 
+ .value {
+    background-color: #DE2B2E;
+}
+
+ .status {
+    background-color: #4D6873;
+ }
+
+.container > div  {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+button, input, p {
+    min-width: 50%;
+    min-height: 50%;
+    border-style: outset;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    transition-duration: .8s;
+    height: 60%;
+}
+
+input {
+    background: #BEC4C2;
+    text-indent: 0.7em;
+    max-width:100% ;
+    color: #453E36;
+}
+ 
+button:hover {
+    background: #A2A7A3;
+    color: #A2A7A3;
+}
